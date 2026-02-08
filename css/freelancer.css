@@ -6,10 +6,14 @@
 
 body {
     overflow-x: hidden;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1d1f23;
+    background-color: #fff;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 p.small {
@@ -82,7 +86,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: linear-gradient(135deg, #1abc9c 0%, #2c3e50 100%);
 }
 
 header .container {
@@ -93,6 +97,7 @@ header .container {
 header img {
     display: block;
     margin: 0 auto 20px;
+    border: 6px solid rgba(255, 255, 255, 0.35);
 }
 
 header .intro-text .name {
@@ -106,6 +111,14 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+
+header .intro-text .intro-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
 
 @media(min-width:768px) {
@@ -172,6 +185,25 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
+}
+
+section.highlights {
+    background-color: #f7f9fb;
+}
+
+.highlight-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 15px 30px rgba(16, 24, 40, 0.08);
+    margin-bottom: 25px;
+    min-height: 260px;
+}
+
+.highlight-icon {
+    font-size: 36px;
+    color: #18bc9c;
+    margin-bottom: 15px;
 }
 
 section h2 {
@@ -276,6 +308,30 @@ section.success a.active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
+}
+
+.btn-hero {
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.contact-copy p {
+    font-size: 19px;
+}
+
+.contact-actions {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.contact-meta {
+    font-size: 16px;
+    color: #6c757d;
 }
 
 .floating-label-form-group {
